@@ -14,9 +14,10 @@ do {
   password = readlineSync.question('Enter a password: ');
 
   if (isValidPassword(password)) {
-    console.log('✅ Password accepted!');
+    console.log('Password accepted.');
   } else {
-    console.log('❌ Password must be at least 8 characters long, include a number, and an uppercase letter.\n');
+    console.log('Password must be at least 8 characters long, include a number, and an uppercase letter.\n');
   }
 
 } while (!isValidPassword(password));
+
